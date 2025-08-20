@@ -98,6 +98,7 @@ themes.addEventListener("click",function(){
  });
 
 active.addEventListener("click",function(){
+    // localStorage.setItem("lasttheme","active");
     if(themes.style.backgroundColor=="yellow"){
  document.documentElement.style.setProperty("--bg-color","#fcdf4f");
 document.documentElement.style.setProperty("--third-color","white");
@@ -135,9 +136,9 @@ active.addEventListener("click",function(){
     else list.style.visibility="hidden";
 })
 
-var reset=document.getElementById("reset");
+// var reset=document.getElementById("reset");
 reset.addEventListener("click",function(){
-
+localStorage.setItem("lasttheme","reset");
  document.documentElement.style.setProperty("--bg-color"," #f9c265");
 document.documentElement.style.setProperty("--third-color","white");
 document.documentElement.style.setProperty("--a-color","black");
@@ -228,12 +229,20 @@ var themevalue=[
 
 
 
-for(key of themekey){
-    var stored=localStorage.getItem(key);
-    if(stored){
-         document.documentElement.style.setProperty(key,stored);
-    }
-}
+//  var last=localStorage.getItem("lasttheme")
+//  if(last==="active"){
+//  active.click();
+//  }
+//  else if(last==="reset"){
+//      reset.click();
+//  }
+
+//  for(key of themekey){
+//      var stored=localStorage.getItem(key);
+//      if(stored){
+//          document.documentElement.style.setProperty(key,stored);
+//      }
+//  }
 
 
 
