@@ -33,7 +33,7 @@ document.documentElement.style.setProperty("--adv-color"," #fdf6e4");
 document.documentElement.style.setProperty("--secondary-color","black");
 
 
-
+localStorage.setItem("lasttheme","light");
 
 });
 
@@ -62,7 +62,7 @@ document.documentElement.style.setProperty("--details-ground","black");
 document.documentElement.style.setProperty("--details-color","white");
 document.documentElement.style.setProperty("--adv-color","black");
 document.documentElement.style.setProperty("--secondary-color","white");
-
+localStorage.setItem("lasttheme","dark");
 
 });
 document.getElementById("light").addEventListener("click",function(){
@@ -234,4 +234,58 @@ document.documentElement.style.setProperty("--secondary-color","black");
 
 
 
+}
+else if(last==="dark"){
+
+
+
+    document.documentElement.style.setProperty("--bg-color","black");
+document.documentElement.style.setProperty("--third-color","white");
+document.documentElement.style.setProperty("--a-color","white");
+document.documentElement.style.setProperty("--text-color","white");
+document.documentElement.style.setProperty("--signup-color","white");
+document.documentElement.style.setProperty("--signup-ground","blue");
+document.documentElement.style.setProperty("--element-ground","grey");
+document.documentElement.style.setProperty("--courses-ground","	#111184");
+document.documentElement.style.setProperty("--creat-ground","#070738");
+document.documentElement.style.setProperty("--application-ground","#070738");
+document.documentElement.style.setProperty("--ready1-ground","#070738");
+document.documentElement.style.setProperty("--ready2-ground","#070738");
+document.documentElement.style.setProperty("--apps-ground","black");
+document.documentElement.style.setProperty("--footer-ground","#070738");
+document.documentElement.style.setProperty("--coursetext-ground","white");
+document.documentElement.style.setProperty("--designt-ground","white");
+document.documentElement.style.setProperty("--container-ground","black");
+document.documentElement.style.setProperty("--mode-ground","white");
+document.documentElement.style.setProperty("--mode-color","black");
+document.documentElement.style.setProperty("--details-ground","black");
+document.documentElement.style.setProperty("--details-color","white");
+document.documentElement.style.setProperty("--adv-color","black");
+document.documentElement.style.setProperty("--secondary-color","white");
+}
+else if(last=="light"){
+
+    document.documentElement.style.setProperty("--bg-color","white");
+document.documentElement.style.setProperty("--third-color","black");
+document.documentElement.style.setProperty("--signup-color","white");
+document.documentElement.style.setProperty("--signup-ground","black");
+document.documentElement.style.setProperty("--text-color","black");
+document.documentElement.style.setProperty("--element-ground","grey");
+document.documentElement.style.setProperty("--courses-ground","	#FCF5E5");
+document.documentElement.style.setProperty("--creat-ground","#E2DFD2");
+document.documentElement.style.setProperty("--application-ground","#FFDEAD");
+document.documentElement.style.setProperty("--ready1-ground","#E2DFD2");
+document.documentElement.style.setProperty("--ready2-ground","#E2DFD2");
+document.documentElement.style.setProperty("--apps-ground","#FCF5E5");
+document.documentElement.style.setProperty("--footer-ground","#FFDEAD");
+document.documentElement.style.setProperty("--coursetext-ground","#FFDEAD");
+document.documentElement.style.setProperty("--designt-ground","#FFDEAD");
+document.documentElement.style.setProperty("--container-ground","#E2DFD2");
+document.documentElement.style.setProperty("--a-color","black");
+document.documentElement.style.setProperty("--mode-ground","black");
+document.documentElement.style.setProperty("--mode-color","white");
+document.documentElement.style.setProperty("--details-ground","white"); 
+document.documentElement.style.setProperty("--details-color","black");
+document.documentElement.style.setProperty("--adv-color"," #fdf6e4");
+document.documentElement.style.setProperty("--secondary-color","black");
 }
